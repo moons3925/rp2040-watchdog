@@ -1,0 +1,17 @@
+[package]
+edition = "2021"
+name = "rp2040-watchdog"
+version = "0.1.0"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+
+cortex-m = "0.7.4"
+cortex-m-rt = "0.7.1"
+embedded-time = "0.12.1"
+futures = { version = "0.3.21", default-features = false }
+embedded-hal = { version = "0.2.7", features = ["unproven"] }
+panic-halt = "0.2.0"
+rp2040_lib = { path = "rp2040_lib" }
+rp-pico = "0.7.0"
+fugit = "0.3.7" # millis()
